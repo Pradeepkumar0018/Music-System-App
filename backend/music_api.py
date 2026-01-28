@@ -256,13 +256,13 @@ def tamil_music_news(page: int = 1):
 
 @app.post("/predict")
 def predict(req: VoiceRequest):
-
+    print("🎯 /predict called")
     # 1️⃣ Record voice
     record_voice()
-
     # 2️⃣ Predict emotion
     emotion = predict_emotion("input.wav")
-
+    #emotion="Happy"
+    print("🎭 Predicted emotion:", emotion)
     # 3️⃣ Recommend songs
     songs_df = recommend_songs(emotion, req.language)
 
@@ -274,7 +274,8 @@ def predict(req: VoiceRequest):
             "artist_name": row["artist_name"],
             "track_url": row["track_url"]
         })
-
+    print("🎶 Songs sent:", len(songs))
+    print(songs)
     return {
         "emotion": emotion,
         "songs": songs[:]
