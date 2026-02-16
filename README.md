@@ -1,6 +1,6 @@
-# 🎵 Kholi Music – AI-Powered Music Recommendation Platform
+# 🎵 dhoni Music – AI-Powered Music Recommendation Platform
 
-Kholi Music is a full-stack, AI-driven music recommendation web application that intelligently suggests songs based on language, popularity, emotion, and audio features.  
+dhoni Music is a full-stack, AI-driven music recommendation web application that intelligently suggests songs based on language, popularity, emotion, and audio features.  
 The platform combines a modern music UI, real-time APIs, and machine-learning–powered analytics to deliver a rich, interactive listening experience.
 
 ---
